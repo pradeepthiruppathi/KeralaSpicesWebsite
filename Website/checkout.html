@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Kerala Spices</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo-container h1 {
+      font-size: 1.5rem;
+      color: #27ae60;
+    }
+
+    .checkout-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .checkout-left,
+    .checkout-right {
+      flex: 1;
+      min-width: 300px;
+      padding: 2rem;
+    }
+
+    .checkout-left h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    .styled-shipping-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      background: #f0f1f4;
+      padding: 0.8rem;
+      border-radius: 10px;
+      gap: 0.8rem;
+    }
+
+    .input-group input,
+    .input-group select {
+      flex: 1;
+      border: none;
+      background: transparent;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .input-group label i {
+      color: #27ae60;
+      font-size: 1.1rem;
+    }
+
+    .row-group {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .row-group input {
+      flex: 1;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 10px;
+      background: #f0f1f4;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .back-btn,
+    .proceed-btn {
+      flex: 1;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      background: #f4f4f4;
+      color: #333;
+      border: 1px solid #ccc;
+    }
+
+    .proceed-btn {
+      background: #27ae60;
+      color: #fff;
+      transition: background 0.3s;
+    }
+
+    .proceed-btn:hover {
+      background: #219150;
+    }
+
+    .checkout-right {
+      background-color: #f7f8fa;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .cart-summary {
+      border-top: 1px solid #ccc;
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
+
+    .checkout-total {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .secure-msg {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .checkout-wrapper {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/Logo.PNG" alt="Kerala Spices Logo" />
+      <h1>Kerala Spices</h1>
+    </div>
+  </header>
+
+  <div class="checkout-wrapper">
+    <div class="checkout-left">
+      <h2>Shipping</h2>
+      <form id="checkout-form" class="styled-shipping-form">
+        <div class="input-group">
+          <label><i class="fas fa-user"></i></label>
+          <input type="text" name="name" placeholder="Name" required />
+        </div>
+        <div class="input-group">
+          <label><i class="fas fa-phone"></i></label>
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <select name="phone-type">
+            <option>Mobile</option>
+            <option>Home</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label><i class="fas fa-map-marker-alt"></i></label>
+          <input type="text" name="address" placeholder="Address" required />
+        </div>
+        <div class="row-group">
+          <input type="text" name="city" placeholder="City" required />
+          <input type="text" name="state" placeholder="State" required />
+          <input type="text" name="zip" placeholder="ZIP" required />
+        </div>
+        <div class="button-group">
+          <button type="button" onclick="window.location.href='cart.html'" class="back-btn">Back to cart</button>
+          <button type="submit" class="proceed-btn">Proceed</button>
+        </div>
+        <div class="secure-msg">🔒 Secure Checkout - 128-bit Encrypted</div>
+      </form>
+    </div>
+
+    <div class="checkout-right">
+      <h2>Review your cart</h2>
+      <div id="cart-summary"></div>
+    </div>
+  </div>
+
+  <script>
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartSummary = document.getElementById("cart-summary");
+
+    function renderCartSummary() {
+      if (cart.length === 0) {
+        cartSummary.innerHTML = "<p>Your cart is empty.</p>";
+        return;
+      }
+
+      let total = 0;
+      cartSummary.innerHTML = cart.map(item => {
+        total += Number(item.price);
+        return `
+          <div class="cart-item">
+            <span>${item.name} (${item.size})</span>
+            <strong>₹${item.price}</strong>
+          </div>`;
+      }).join("");
+
+      cartSummary.innerHTML += `
+        <div class="cart-summary">
+          <div class="checkout-total">
+            <span>Total</span>
+            <span>₹${total.toFixed(2)}</span>
+          </div>
+        </div>`;
+    }
+
+    renderCartSummary();
+
+    document.getElementById("checkout-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const form = new FormData(this);
+      const name = form.get("name");
+      const phone = form.get("phone");
+      const address = form.get("address");
+      const city = form.get("city");
+      const state = form.get("state");
+      const zip = form.get("zip");
+
+      const fullAddress = `${address}, ${city}, ${state} - ${zip}`;
+
+      let message = `*New Order!*\n👤 Name: ${name}\n📍 Address: ${fullAddress}\n\n🛍️ *Items:*\n Your Order will be delivered Soon, Thankyou For Shopping with Us`;
+      let total = 0;
+      cart.forEach(item => {
+        message += `- ${item.name} (${item.size}) - ₹${item.price}\n`;
+        total += Number(item.price);
+      });
+      message += `🔢 *Total:* ₹${total}`;
+
+      const encodedMsg = encodeURIComponent(message);
+      const yourNumber = "YOUR_NUMBER"; // Replace with your number
+      window.open(`https://wa.me/${phone}?text=${encodedMsg}`, '_blank');
+      window.open(`https://wa.me/${yourNumber}?text=${encodedMsg}`, '_blank');
+
+      localStorage.removeItem("cart");
+      window.location.href = "thankyou.html";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kerala Spices Theni</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('./Website/images/main-bg.JPG'); /* replace with your image path */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .small-text {
+      font-size: 20px;
+      opacity: 0.7;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .big-text {
+      font-size: 60px;
+      font-weight: 700;
+      margin-top: 10px;
+      animation: zoomIn 2s ease 1s forwards;
+      transform: scale(0.5);
+      opacity: 0;
+    }
+
+    .btn {
+      margin-top: 40px;
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+      animation: glow 1.5s infinite alternate;
+      transition: transform 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 0.7;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 5px #28a745;
+      }
+      to {
+        box-shadow: 0 0 20px #28a745;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .big-text {
+        font-size: 36px;
+      }
+
+      .btn {
+        font-size: 16px;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="small-text">Welcome to</div>
+  <div class="big-text">Kerala Spices Theni</div>
+  <a href="./Website/index.html" class="btn">Order Now</a>
+</body>
+</html>

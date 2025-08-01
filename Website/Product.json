@@ -1,0 +1,461 @@
+[
+  {
+    "S.No": 1,
+    "Item": "Cardamom",
+    "30 Gms": 110,
+    "50 Gms": 180,
+    "100 Gms": 350,
+    "500 Gms": 1700,
+    "1Kg": 3400,
+    "image": "images/products/Cardamom.jpg"
+  },
+  {
+    "S.No": 2,
+    "Item": "Pepper",
+    "50 Gms": 45,
+    "100 Gms": 90,
+    "250 Gms2": 220,
+    "500 Gms": 430,
+    "1Kg": 850
+  },
+  {
+    "S.No": 3,
+    "Item": "Tea Powder (Pasu Paara)",
+    "500 Gms": 140,
+    "1Kg": 280
+  },
+  {
+    "S.No": 4,
+    "Item": "Tea Powder (Kanni Maara)",
+    "500 Gms": 140,
+    "1Kg": 280
+  },
+  {
+    "S.No": 5,
+    "Item": "Cashew",
+    "50 Gms": 60,
+    "100 Gms": 120,
+    "250 Gms2": 300,
+    "500 Gms": 600,
+    "1Kg": 1150
+  },
+  {
+    "S.No": 6,
+    "Item": "Pista",
+    "100 Gms": 160,
+    "500 Gms": 900
+  },
+  {
+    "S.No": 7,
+    "Item": "Kismis(Black)",
+    "50 Gms": 30,
+    "100 Gms": 60,
+    "250 Gms2": 150,
+    "500 Gms": 290
+  },
+  {
+    "S.No": 8,
+    "Item": "Kismis(White)",
+    "250 Gms2": 140,
+    "500 Gms": 270
+  },
+  {
+    "S.No": 9,
+    "Item": "Almond(Badam)",
+    "50 Gms": 60,
+    "100 Gms": 120,
+    "250 Gms2": 300,
+    "500 Gms": 600,
+    "1Kg": 1200
+  },
+  {
+    "S.No": 10,
+    "Item": "Nutmace (Jaathipathiri)",
+    "10 Gms": 40,
+    "20 Gms": 80
+  },
+  {
+    "S.No": 11,
+    "Item": "Clove (Grambu)",
+    "50 Gms": 65,
+    "100 Gms": 130
+  },
+  {
+    "S.No": 12,
+    "Item": "NutMeg (Jaathikaai)",
+    "20 Gms": 15,
+    "50 Gms": 35,
+    "100 Gms": 70
+  },
+  {
+    "S.No": 13,
+    "Item": "Bayfin Cripton FLV",
+    "100 Gms": 60
+  },
+  {
+    "S.No": 14,
+    "Item": "Safari Caramel Crunchy",
+    "100 Gms": 50
+  },
+  {
+    "S.No": 15,
+    "Item": "Home Made Choco White & Dark",
+    "100 Gms": 60
+  },
+  {
+    "S.No": 16,
+    "Item": "Sayan Dates Soft",
+    "50 Gms": 20,
+    "100 Gms": 40,
+    "250 Gms2": 100,
+    "500 Gms": 200,
+    "1Kg": 400
+  },
+  {
+    "S.No": 17,
+    "Item": "Apricot Loose Turkle",
+    "50 Gms": 70,
+    "100 Gms": 110
+  },
+  {
+    "S.No": 18,
+    "Item": "Mixed Nuts",
+    "50 Gms": 60,
+    "100 Gms": 120
+  },
+  {
+    "S.No": 19,
+    "Item": "Kiwi Brazil",
+    "50 Gms": 35,
+    "100 Gms": 60
+  },
+  {
+    "S.No": 20,
+    "Item": "Black Berry Plum",
+    "100 Gms": 80,
+    "200 Gms": 150
+  },
+  {
+    "S.No": 21,
+    "Item": "Bazana Pista California",
+    "100 Gms": 180,
+    "250 Gms2": 450
+  },
+  {
+    "S.No": 22,
+    "Item": "Star Annasi",
+      "50 Gms": 45,
+    "100 Gms": 90
+  },
+  {
+    "S.No": 23,
+    "Item": "Kerala Patta",
+    "50 Gms": 30,
+    "100 Gms": 60
+  },
+  {
+    "S.No": 24,
+    "Item": "Kalpasi",
+    "10 Gms": 15,
+    "20 Gms": 30
+  },
+  {
+    "S.No": 25,
+    "Item": "Cinamon Roll Tiger",
+    "50 Gms": 45,
+    "100 Gms": 90
+  },
+  {
+    "S.No": 26,
+    "Item": "AC 118 Spices GIFTBOX",
+    "1 Box": 500
+  },
+  {
+    "S.No": 27,
+    "Item": "Kinza Hiney Nuts",
+    "250 Gms2": 220
+  },
+  {
+    "S.No": 28,
+    "Item": "Home Made Choco",
+    "100 Gms": 70
+  },
+  {
+    "S.No": 29,
+    "Item": "Belgium Chocolates",
+    "50 Gms": 75,
+    "100 Gms": 150
+  },
+
+  {
+    "S.No": 33,
+    "Item": "Cashew 320 Chilly Garlic",
+    "50 Gms": 70,
+    "100 Gms": 140 
+  },
+  {
+    "S.No": 34,
+    "Item": "Cashew 320 Pepper Garlic",
+    "50 Gms": 70,
+    "100 Gms": 140
+  },
+  {
+    "S.No": 35,
+    "Item": "Cashew 320 Salt",
+    "50 Gms": 60,
+    "100 Gms": 120
+  },
+  {
+    "S.No": 36,
+    "Item": "Cashew 320 Chilly",
+    "50 Gms": 65,
+    "100 Gms": 130
+  },
+  {
+    "S.No": 37,
+    "Item": "Bazana Pista Premium",
+    "100 Gms": 180,
+    "250 Gms2": 450
+  },
+  {
+    "S.No": 38,
+    "Item": "Bay Leaf",
+    "50 Gms": 30,
+    "25 Gms": 15
+  },
+  {
+    "S.No": 39,
+    "Item": "Forest Honey",
+    "300 ML": 240,
+    "700 ML": 560
+  },
+  {
+    "S.No": 40,
+    "Item": "Coconut Oil",
+    "500 ML": 250
+ },
+    {
+    "S.No": 45,
+    "Item": "Banana Chips ",
+    "100 Gms": 40,
+    "250 Gms": 100,
+    "500 Gms": 200
+  },
+  {
+    "S.No": 46,
+    "Item": "Chakka Chips",
+    "100 Gms": 50
+  },
+  {
+    "S.No": 47,
+    "Item": "KODAM PULI",
+    "100 Gms": 80
+  },
+  {
+    "S.No": 48,
+    "Item": "Perungayam",
+    "30 Gms": 20
+  },
+  {
+    "S.No": 49,
+    "Item": "Sabja Seeds",
+    "50 Gms": 40
+  },
+  {
+    "S.No": 50,
+    "Item": "Pathimugam",
+    "10 Gms": 10
+  },
+  {
+    "S.No": 51,
+    "Item": "Walnut",
+    "50 Gms": 80,
+    "100 Gms": 160,
+    "250 Gms": 429
+  },
+  {
+    "S.No": 52,
+    "Item": "Peanut",
+    "250 Gms2": 50
+  },
+  {
+    "S.No": 53,
+    "Item": "Assam Turmeric Powder",
+    "100 Gms": 140
+  },
+  {
+    "S.No": 54,
+    "Item": "Connemaara Filter Coffee",
+    "250 Gms2": 300
+   
+  },
+  {
+    "S.No": 55,
+    "Item": "Connemaara Cardamom Tea",
+    "250 Gms2": 240
+  },
+  {
+    "S.No": 56,
+    "Item": "Connemaara Ginger Tea",
+    "250 Gms2": 240
+  },
+  {
+    "S.No": 57,
+    "Item": "Connemaara Masal Tea",
+    "250 Gms2": 280
+  },
+  {
+    "S.No": 58,
+    "Item": "Connemaara Green Tea",
+    "250 Gms2": 230
+  },
+  {
+    "S.No": 59,
+    "Item": "Connemaara Special Tea",
+    "500 Gms": 160
+  },
+  {
+    "S.No": 60,
+    "Item": "Connemaara  Tea",
+    "500 Gms": 140
+
+  },
+  {
+    "S.No": 61,
+    "Item": "Connemaara Kolunthu Tea",
+    "250 Gms2": 280
+
+  },
+  {
+    "S.No": 62,
+    "Item": "Aththipalam",
+    "100 Gms": 130
+
+  },
+  {
+    "S.No": 63,
+    "Item": "Dilan Dates",
+    "250 Gms2": 100,
+    "500 Gms": 200
+  },
+  {
+    "S.No": 64,
+    "Item": "Cherry",
+    "100 Gms": 30
+  },
+  {
+    "S.No": 65,
+    "Item": "Dry Mix Nuts Box 200G",
+    "200G Box": 220 
+  },
+  {
+    "S.No": 66,
+    "Item": "Kismis (Green)",
+    "50 Gms": 30,
+    "100 Gms": 60
+  },
+  {
+    "S.No": 67,
+    "Item": "Pista Biscuits",
+    "1 Packet": 120
+  },
+  {
+    "S.No": 68,
+    "Item": "Amla",
+    "1 Box": 110
+  },
+
+  {
+    "S.No": 70,
+    "Item": "Makhana 70G",
+    "10 Gms": 200
+  },
+  {
+    "S.No": 71,
+    "Item": "Cashew Bolt",
+    "100 Gms": 140
+  },
+  {
+    "S.No": 72,
+    "Item": "Pana Kalkandu",
+    "50 Gms": 40
+  },
+  {
+    "S.No": 73,
+    "Item": "Adela 750ML",
+    "10 Gms": 300
+
+  },
+  {
+    "S.No": 74,
+    "Item": "Zian Royalty 750ML",
+    "750 ML": 420
+
+  },
+  {
+    "S.No": 75,
+    "Item": "Edanburg Red Wine 750ML",
+    "750 ML": 600
+
+  },
+  {
+    "S.No": 76,
+    "Item": "Castillo De Wine 1L",
+    "10 Gms": 450
+
+  },
+  {
+    "S.No": 77,
+    "Item": "Bavaria Health Drink 300ML",
+    "300ML Tin": 110
+  },
+  {
+    "S.No": 78,
+    "Item": "Dry Fruits Mixed 300 G",
+    "300G Box": 290
+  },
+  {
+    "S.No": 79,
+    "Item": "Chocolate Giftbox(Round)",
+    "1 Box": 200   
+  },
+  {
+    "S.No": 80,
+    "Item": "Chocolate Giftbox(Heart)",
+    "1 Box": 180
+   
+  },
+  {
+    "S.No": 81,
+    "Item": "Chocolate Giftbox(Oval)",
+    "1 Box": 230
+  },
+
+  {
+    "S.No": 84,
+    "Item": "Rose Love Chocolate",
+    "Valentine Spl": 120
+  },
+  {
+    "S.No": 85,
+    "Item": "A One Dry Fruit 150G",
+    "150Gms": 180
+
+  },
+  {
+    "S.No": 86,
+    "Item": "Raffino Dry Fruits Mix 250G",
+    "250 Gms": 300
+  },
+  {
+    "S.No": 87,
+    "Item": "Cream Crackers Buscuit",
+    "10 Gms": 180
+
+  },
+  {
+    "S.No": 88,
+    "Item": "Apple Vinegar",
+    "10 Gms": 125
+  }
+]

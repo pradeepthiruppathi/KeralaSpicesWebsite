@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart - Kerala Spices</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      margin: 0;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo-container h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #222;
+      text-transform: uppercase;
+    }
+
+    .cart-page {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      gap: 2rem;
+    }
+
+    .cart-items {
+      flex: 3;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 1rem 0;
+    }
+
+    .cart-item img {
+      width: 100px;
+      height: auto;
+      margin-right: 1rem;
+      border-radius: 8px;
+    }
+
+    .cart-info {
+      flex: 1;
+    }
+
+    .cart-info h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .cart-info p {
+      margin: 0.2rem 0;
+      color: #555;
+    }
+
+    .cart-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .cart-controls button {
+      background: none;
+      border: 1px solid #aaa;
+      padding: 6px 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .cart-price {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .order-summary {
+      flex: 1;
+      border: 1px solid #eee;
+      padding: 2rem;
+      background: #fafafa;
+      border-radius: 10px;
+    }
+
+    .order-summary h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .summary-line {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.7rem 0;
+    }
+
+    .checkout-btn {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      background: #111;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 768px) {
+      .cart-page {
+        flex-direction: column;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="images/Logo.PNG" alt="Logo">
+    <h1>Kerala Spices</h1>
+  </div>
+</header>
+
+<div class="cart-page">
+  <!-- LEFT: Cart Items -->
+  <div class="cart-items" id="cart-items"></div>
+
+  <!-- RIGHT: Summary -->
+  <div class="order-summary" id="summary-box">
+    <h2>Order Summary</h2>
+    <div class="summary-line">
+      <span>Subtotal</span>
+      <span id="subtotal">₹0</span>
+    </div>
+    <div class="summary-line">
+      <span>Shipping</span>
+      <span>Free</span>
+    </div>
+    <div class="summary-line" style="font-weight:bold;">
+      <span>Total</span>
+      <span id="total">₹0</span>
+    </div>
+    <button class="checkout-btn" onclick="goToCheckout()">Check Out</button>
+  </div>
+</div>
+
+<script>
+  const container = document.getElementById('cart-items');
+  const subtotalText = document.getElementById('subtotal');
+  const totalText = document.getElementById('total');
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  function renderCart() {
+    container.innerHTML = '';
+    if (cart.length === 0) {
+      container.innerHTML = '<p>Your cart is empty.</p>';
+      subtotalText.textContent = '₹0';
+      totalText.textContent = '₹0';
+      return;
+    }
+
+    let subtotal = 0;
+
+    cart.forEach((item, i) => {
+      subtotal += Number(item.price);
+      const div = document.createElement('div');
+      div.className = 'cart-item';
+      div.innerHTML = `
+        <img src="images/${item.name.toLowerCase().replace(/\s+/g, '_')}.jpg" alt="${item.name}">
+        <div class="cart-info">
+          <h3>${item.name}</h3>
+          <p>Size: ${item.size}</p>
+          <div class="cart-controls">
+            <button onclick="removeItem(${i})">🗑️</button>
+          </div>
+        </div>
+        <div class="cart-price">₹${item.price}</div>
+      `;
+      container.appendChild(div);
+    });
+
+    subtotalText.textContent = `₹${subtotal}`;
+    totalText.textContent = `₹${subtotal}`;
+  }
+
+  function removeItem(i) {
+    cart.splice(i, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    renderCart();
+  }
+
+  function goToCheckout() {
+    if (cart.length === 0) {
+      alert("Cart is empty!");
+      return;
+    }
+    window.location.href = "checkout.html";
+  }
+
+  renderCart();
+</script>
+
+</body>
+</html>
