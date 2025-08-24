@@ -59,6 +59,70 @@
     .btn:hover {
       transform: scale(1.05);
     }
+/* Make images and videos scale with screen */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive text */
+h1, h2, h3, p, a, span {
+  word-wrap: break-word;
+  line-height: 1.4em;
+}
+
+/* Container scaling */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Responsive form */
+form input, form select, form textarea, form button {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+/* Responsive navigation bar */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Make columns stack on small screens */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row > div {
+  flex: 1;
+  min-width: 250px; /* Minimum size before wrapping */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Buttons responsive */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+/* Mobile friendly tweaks */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  p  { font-size: 1rem; }
+  nav { flex-direction: column; }
+}
 
     /* Animations */
     @keyframes fadeIn {
