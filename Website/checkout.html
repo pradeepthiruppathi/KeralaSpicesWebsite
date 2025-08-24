@@ -266,19 +266,22 @@
 
       const fullAddress = `${address}, ${city}, ${state} - ${zip}`;
 
-      let message = `*New Order!*\n👤 Name: ${name}\n📍 Address: ${fullAddress}\n\n🛍️ *Items:*\n Your Order will be delivered Soon, Thankyou For Shopping with Us`;
+      let message = `*New Order!*\n👤 Name: ${name}\n📞 Phone: ${phone}\n📍 Address: ${fullAddress}\n\n🛍️ *Items:*\n`;
       let total = 0;
       cart.forEach(item => {
         message += `- ${item.name} (${item.size}) - ₹${item.price}\n`;
         total += Number(item.price);
       });
-      message += `🔢 *Total:* ₹${total}`;
+      message += `\n🔢 *Total:* ₹${total}`;
 
+      // Your WhatsApp number
+      const yourNumber = "9486064496";
       const encodedMsg = encodeURIComponent(message);
-      const yourNumber = "9486064496"; // Replace with your number
-      window.open(`https://wa.me/${phone}?text=${encodedMsg}`, '_blank');
+
+      // Open WhatsApp with prefilled order message to your number
       window.open(`https://wa.me/${yourNumber}?text=${encodedMsg}`, '_blank');
 
+      // Clear cart and redirect
       localStorage.removeItem("cart");
       window.location.href = "thankyou.html";
     });
